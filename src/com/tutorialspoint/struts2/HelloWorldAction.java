@@ -1,9 +1,13 @@
 package com.tutorialspoint.struts2;
 
-public class HelloWorldAction{
+import com.opensymphony.xwork2.ActionSupport;
+
+public class HelloWorldAction extends ActionSupport {
     private String name;
+
+    @Override
     public String execute() throws Exception {
-        return "success";
+        return SUCCESS;
     }
     public String getName() {
         return name;

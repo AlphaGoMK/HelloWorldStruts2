@@ -19,9 +19,13 @@
         <action name="select"
                 class="com.tutorialspoint.struts2.SelectAction"
                 method="execute">
-            <result name="issue">/Issue.jsp</result>
-            <result name="check">/Check.jsp</result>
-            <result name="score">/Score.jsp</result>
+            <result name="success">/Login.jsp</result>
+            <result name="error">/Error.jsp</result>
+        </action>
+        <action name="check"
+                class="com.tutorialspoint.struts2.LoginAction"
+                method="check">
+            <result name="chk">/Check.jsp</result>
         </action>
 
     </package>

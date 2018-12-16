@@ -14,7 +14,7 @@
     <h1>Login</h1>
     <form action="login">
         <label>Please input your account</label>
-        <input type="text" name="user" id="account"/>
+        <input type="text" name="uid"/>
         <input type="password" name="passwd"/>
         <input type="submit" value="login"/>
 

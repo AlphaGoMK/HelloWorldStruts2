@@ -18,6 +18,6 @@ public class SelectAction extends ActionSupport {
     @Override
     public String execute() throws Exception {
 
-        return super.execute();
+        return SUCCESS;
     }
 }

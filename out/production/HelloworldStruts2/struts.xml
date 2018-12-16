@@ -16,6 +16,17 @@
             <result name="success">/Main.jsp</result>
             <result name="error">/Error.jsp</result>
         </action>
+        <action name="select"
+                class="com.tutorialspoint.struts2.SelectAction"
+                method="execute">
+            <result name="success">/Login.jsp</result>
+            <result name="error">/Error.jsp</result>
+        </action>
+        <action name="check"
+                class="com.tutorialspoint.struts2.LoginAction"
+                method="check">
+            <result name="chk">/Check.jsp</result>
+        </action>
 
     </package>
 </struts>

@@ -12,17 +12,13 @@
 </head>
 <body>
 
-
-
-    <form method=post action="" name="frm">
-        <label>select</label>
-        <br/>
-        <input type="submit" value="ISSUE" onclick="window.location='Issue.jsp'"/>
-        <br/>
-        <input type="submit" value="CHECK" onclick="check"/>
-        <br/>
-        <input type="submit" value="SCORE" onclick="score"/>
-    </form>
+    <%--<script type="text/javascript">--%>
+        <%--function check(){--%>
+            <%--window.alert(111);--%>
+            <%--myform.action="check.action";--%>
+            <%--myform.submit();--%>
+        <%--}--%>
+    <%--</script>--%>
 
     <script type="text/javascript">
         function issue(){
@@ -35,6 +31,17 @@
             window.location.replace("/Score.jsp");
         }
     </script>
+
+    <form method=post action="select">
+        <label>select</label>
+        <br/>
+        <input type="button" name="ACT0" value="ISSUE" onclick="issue()"/>
+        <br/>
+        <input type="button" name="ACT1" value="CHECK" onclick="check()"/>
+        <br/>
+        <input type="button" name="ACT2" value="SCORE" onclick="score()"/>
+    </form>
+
 
 </body>
 </html>
